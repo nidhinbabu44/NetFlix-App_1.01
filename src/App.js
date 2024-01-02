@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+// page created by Nidhin Babu
+import  React from 'react'
+import Banner from './components/Banner/Banner';
+import Navbar from './components/navbar/navbar';
+import "./App.css"
+import RowPosters from './components/Rowposters/RowPosters';
+import Footer from './components/Footer/Footer';
+import {orginals,action,comedy,horror } from "./components/urls"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Navbar/>
+     <Banner/>
+     <RowPosters url={orginals} title={"Netflix orginals"}/>
+     <RowPosters url={action} title={"Action"} isSmall/> 
+     <RowPosters url={horror} title={"Horror"} isSmall/> 
+     <RowPosters url={comedy} title={"Comedy"} isSmall/> 
+    <Footer/>
     </div>
   );
 }

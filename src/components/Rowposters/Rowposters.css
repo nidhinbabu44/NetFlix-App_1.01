@@ -1,0 +1,33 @@
+/* page created by Nidhin Babu */
+.row{
+    margin-left:20px;
+    color:#fff;
+}
+.posters{
+padding:20px;
+display: flex;
+overflow-y:hidden;
+overflow-x: scroll;
+cursor: pointer;
+
+
+}
+.poster{
+    max-height:250px ;
+    margin-right: 10px;
+   cursor: pointer;
+}
+.smallPoster{
+    height: 150px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.poster:hover{
+    transform: scale(1.1);
+}
+.smallPoster:hover{
+    transform: scale(1.1);
+}
+.posters::-webkit-scrollbar{
+    display: none;
+}

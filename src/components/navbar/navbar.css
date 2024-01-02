@@ -1,0 +1,21 @@
+/* page created by Nidhin Babu */
+.logo{
+    left:20px;
+    width:80px;
+    position: fixed;
+}
+.avatar{
+    right:20px;
+    width:30px;
+    position:fixed;
+}
+.navbar{
+    width:100%;
+    background-color: rgb(42, 41, 41);
+    position: fixed;
+    top:0;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
